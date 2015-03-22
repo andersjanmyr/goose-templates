@@ -1,4 +1,4 @@
-package main
+package {{dromedarcase .NAME}}
 
 import (
 	"testing"
@@ -6,7 +6,7 @@ import (
 
 func Test{{camelcase .NAME}}(t *testing.T) {
 	actual := {{camelcase .NAME}}()
-	expected := "prefixMyNamesuffix"
+	expected := "{{dromedarcase .NAME}}"
 	if actual != expected {
 		t.Errorf("main(): %v, expected %v", actual, expected)
 	}

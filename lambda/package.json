@@ -1,0 +1,30 @@
+{
+  "name": "{{camelcase .NAME}}",
+  "version": "1.0.0",
+  "description": "Lambda service for {{camelcase .NAME}}",
+  "main": "{{dasherized .NAME}}.js",
+  "scripts": {
+    "test": "mocha --invert --grep integration --recursive",
+    "integration": "mocha --grep integration --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andersjanmyr/{{dasherized .NAME}}.git"
+  },
+  "keywords": [
+    "aws",
+    "lambda"
+  ],
+  "author": "Anders Janmyr <anders@janmyr.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andersjanmyr/{{dasherized .NAME}}/issues"
+  },
+  "homepage": "https://github.com/andersjanmyr/{{dasherized .NAME}}",
+  "dependencies": {
+    "async": ""
+  },
+  "devDependencies": {
+    "aws-sdk": ""
+  }
+}

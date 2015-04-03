@@ -12,7 +12,7 @@ aws iam attach-role-policy \
   --policy-arn $execute_policy
 
 
-s3_invoke_role='S3LambdaExecuteRole'
+s3_invoke_role='S3LambdaInvokeRole'
 invoke_policy='arn:aws:iam::aws:policy/service-role/AWSLambdaRole'
 aws iam create-role \
   --role-name $s3_invoke_role \
@@ -22,7 +22,7 @@ aws iam attach-role-policy \
   --role-name $s3_invoke_role \
   --policy-arn $invoke_policy
 
-kinesis_invoke_role='KinesisLambdaExecuteRole'
+kinesis_invoke_role='KinesisLambdaInvokeRole'
 aws iam create-role \
   --role-name $kinesis_invoke_role \
   --assume-role-policy-document file://iam/s3-assumerole-policy.json

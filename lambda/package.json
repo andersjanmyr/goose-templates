@@ -1,7 +1,7 @@
 {
-  "name": "{{camelcase .NAME}}",
+  "name": "{{dasherized .NAME}}",
   "version": "1.0.0",
-  "description": "Lambda service for {{camelcase .NAME}}",
+  "description": "Lambda service for {{dasherized .NAME}}",
   "main": "{{dasherized .NAME}}.js",
   "scripts": {
     "test": "mocha --invert --grep integration --recursive",

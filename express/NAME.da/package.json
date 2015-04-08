@@ -1,0 +1,58 @@
+{
+  "name": "{{dasherized .NAME}}",
+  "version": "1.0.0",
+  "description": "{{titlecase .NAME}}",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "debug": "node --debug-brk server.js",
+    "test": "mocha --recursive",
+    "test-debug": "mocha --recursive --debug-brk",
+    "test-watch": "mocha --recursive --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andersjanmyr/{{dasherized .NAME}}.git"
+  },
+  "keywords": [
+    "Lab",
+    "Express"
+  ],
+  "author": "Anders Janmyr <anders@janmyr.com> (http://anders.janmyr.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andersjanmyr/{{dasherized .NAME}}/issues"
+  },
+  "homepage": "https://github.com/andersjanmyr/{{dasherized .NAME}}",
+  "jshintConfig": {
+    "curly": false,
+    "indent": 2
+    "trailing": true,
+    "maxparams": 4,
+    "maxdepth": 2,
+    "maxcomplexity": 6,
+    "node": true,
+    "globals": {
+      "after": true,
+      "afterEach": true,
+      "before": true,
+      "beforeEach": true,
+      "describe": true,
+      "it": true
+    }
+  },
+  "dependencies": {
+    "body-parser": "",
+    "debug": "",
+    "express": "",
+    "morgan": "",
+    "socket.io": ""
+  },
+  "devDependencies": {
+    "mocha": "",
+    "nodemon": "",
+    "sinon": "",
+    "supertest": ""
+  }
+}

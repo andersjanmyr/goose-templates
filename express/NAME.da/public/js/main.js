@@ -4,8 +4,7 @@ $(function() {
     console.log(event);
   });
 
-  require('socket.io')(80)    var socket = io.connect('http://localhost');
-  console.log(socket);
+  var socket = io();
   socket.on('connect', function () {
     console.log('Connected');
   });
@@ -13,4 +12,5 @@ $(function() {
   socket.on('something:happened', function(error) {
     console.log(error);
   });
+
 });

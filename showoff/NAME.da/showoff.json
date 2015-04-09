@@ -1,0 +1,3 @@
+{ "name": "{{dasherized .NAME}}", "sections": [ 
+  {"section":"slides"} 
+]}

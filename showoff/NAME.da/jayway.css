@@ -1,0 +1,80 @@
+#preso .slide {
+  background-color: #888;
+  font-family: Georgia;
+}
+h1, h2 {
+  color: white;
+  font-family: "American Typewriter";
+}
+.small h1 {
+  font-size: 8em;
+}
+
+.content::after {
+  position: absolute;
+  right: 250px;
+  bottom: 120px;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  content: url(images/jay_logo.png);
+}
+
+th {
+    font-size: 2em;
+    text-align: left;
+    background: darkgray;
+    padding: .5em;
+}
+th:nth-child(3) {
+    font-size: 1.2em;
+}
+
+tr:nth-child(2n+1) {
+    background: lightgray;
+}
+td {
+    padding: .4em;
+}
+
+td pre {
+  font-size: 37px;
+}
+
+td:nth-child(1) {
+    font-size: 2em;
+    padding-left: .4em;
+}
+td:nth-child(3) {
+    font-size: 1.4em;
+    padding-left: .4em;
+}
+
+.bullets ul {
+  list-style: square url(images/jay_bullet.png);
+  list-style-position: inside;
+}
+.bullets ul li {
+  padding-left: 10px;
+}
+
+.bullets ul ul {
+  list-style: square url(images/jay_bullet_small.png);
+  list-style-position: inside;
+  padding: inside;
+}
+
+.bullets ul ul li {
+  padding-left: 0;
+}
+
+.small ul {
+  list-style: square url(images/jay_bullet_small.png);
+  list-style-position: inside;
+}
+
+.bullets ul li {
+  text-align: left;
+  padding: 10px 90px;
+}
+

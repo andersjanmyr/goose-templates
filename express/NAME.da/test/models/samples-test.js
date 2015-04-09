@@ -3,7 +3,7 @@
 var expect = require('chai').expect;
 var sinon = require('sinon');
 
-var samples = require('../../lib/models/samples');
+var Samples = require('../../lib/models/samples');
 var samples;
 
 describe('Samples', function() {
@@ -55,7 +55,7 @@ describe('Samples', function() {
         });
         it('gets an error event if the samples title exists', function(done) {
             samples.on('error', function(error) {
-                expect(error).to.equal('samples not found, id: missing');
+                expect(error).to.equal('Samples not found, id: missing');
                 done();
             });
             samples.remove({id: 'missing'}, function() {
@@ -94,7 +94,7 @@ describe('Samples', function() {
         });
         it('calls back with error if samples missing', function(done) {
             samples.remove({id: 'missing'}, function(err) {
-                expect(err).to.equal('samples not found, id: missing');
+                expect(err).to.equal('Samples not found, id: missing');
                 done();
             });
         });
@@ -108,7 +108,7 @@ describe('Samples', function() {
         });
         it('gets an error event if the samples is missing', function(done) {
             samples.on('error', function(error) {
-                expect(error).to.equal('samples not found, id: missing');
+                expect(error).to.equal('Samples not found, id: missing');
                 done();
             });
             samples.remove({id: 'missing'}, function() {
@@ -128,7 +128,7 @@ describe('Samples', function() {
         });
         it('calls back with error if samples missing', function(done) {
             samples.update({id: 'missing'}, function(err) {
-                expect(err).to.equal('samples not found, id: missing');
+                expect(err).to.equal('Samples not found, id: missing');
                 done();
             });
         });
@@ -151,7 +151,7 @@ describe('Samples', function() {
         });
         it('gets an error event if the samples is missing', function(done) {
             samples.on('error', function(error) {
-                expect(error).to.equal('samples not found, id: missing');
+                expect(error).to.equal('Samples not found, id: missing');
                 done();
             });
             samples.update({id: 'missing', title: 'Not here'}, function() {

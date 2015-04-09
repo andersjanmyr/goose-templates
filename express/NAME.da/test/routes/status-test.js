@@ -1,5 +1,5 @@
 var request = require('supertest');
-var assert = require('assert');
+var expect = require('chai').expect;
 var sinon = require('sinon');
 var express = require('express');
 var routes = require('../../lib/routes/status');
@@ -14,8 +14,8 @@ describe('GET /status', function() {
             .get('/status')
             .end(function(err, res) {
                 if (err) return done(err);
-                assert.equal(res.get('content-type'), 'application/json');
-                assert.equal(res.body.health, 'good');
+                expect(res.get('content-type')).to.match(/json/);
+                expect(res.body.health).to.equal('good');
                 done();
             });
     });

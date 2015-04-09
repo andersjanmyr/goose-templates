@@ -21,7 +21,7 @@ process.on('uncaughtException', function(err) {
 
 
 // Utility function to show middleware and routes
-// DEBUG=express-lab* npm start
+// DEBUG={{dasherized .NAME}}* npm start
 function printRoutes() {
     var middleware = app._router.stack.map(function(route) {
         return route.route ?

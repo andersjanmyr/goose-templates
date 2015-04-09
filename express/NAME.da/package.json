@@ -27,7 +27,7 @@
   "homepage": "https://github.com/andersjanmyr/{{dasherized .NAME}}",
   "jshintConfig": {
     "curly": false,
-    "indent": 2
+    "indent": 2,
     "trailing": true,
     "maxparams": 4,
     "maxdepth": 2,
@@ -50,6 +50,7 @@
     "socket.io": ""
   },
   "devDependencies": {
+    "chai": "",
     "mocha": "",
     "nodemon": "",
     "sinon": "",

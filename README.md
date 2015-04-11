@@ -1,5 +1,9 @@
-Goose Templates
-# express
+# Goose Templates
+
+Templates for use with the
+[Goose file generator](https://github.com/andersjanmyr/goose)
+
+## express
 
 ```
 express
@@ -32,7 +36,7 @@ express
 
 11 directories, 15 files
 ```
-# go
+## go
 
 ```
 go
@@ -41,7 +45,7 @@ go
 
 0 directories, 2 files
 ```
-# goweb
+## goweb
 
 ```
 goweb
@@ -51,7 +55,7 @@ goweb
 
 1 directory, 2 files
 ```
-# lambda
+## lambda
 
 ```
 lambda
@@ -69,7 +73,7 @@ lambda
 
 2 directories, 9 files
 ```
-# node
+## node
 
 ```
 node
@@ -80,7 +84,7 @@ node
 
 2 directories, 2 files
 ```
-# showoff
+## showoff
 
 ```
 showoff

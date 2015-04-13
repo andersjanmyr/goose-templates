@@ -1,15 +1,15 @@
 {
-  "name": "{{dasherized .NAME}}",
+  "name": "{{dromedarcase .NAME}}",
   "version": "1.0.0",
-  "description": "Lambda service for {{dasherized .NAME}}",
-  "main": "{{dasherized .NAME}}.js",
+  "description": "Lambda service for {{dromedarcase .NAME}}",
+  "main": "{{dromedarcase .NAME}}.js",
   "scripts": {
     "test": "mocha --invert --grep integration --recursive",
     "integration": "mocha --grep integration --recursive"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:andersjanmyr/{{dasherized .NAME}}.git"
+    "url": "git@github.com:andersjanmyr/{{dromedarcase .NAME}}.git"
   },
   "keywords": [
     "aws",
@@ -18,9 +18,9 @@
   "author": "Anders Janmyr <anders@janmyr.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andersjanmyr/{{dasherized .NAME}}/issues"
+    "url": "https://github.com/andersjanmyr/{{dromedarcase .NAME}}/issues"
   },
-  "homepage": "https://github.com/andersjanmyr/{{dasherized .NAME}}",
+  "homepage": "https://github.com/andersjanmyr/{{dromedarcase .NAME}}",
   "dependencies": {
     "async": ""
   },

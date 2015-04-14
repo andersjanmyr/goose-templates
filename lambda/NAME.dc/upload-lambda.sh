@@ -15,7 +15,7 @@ zip='./{{dromedarcase .NAME}}.zip'
 func='{{dromedarcase .NAME}}'
 
 account='{{.ACCOUNT}}'
-s3_role="arn:aws:iam::$account:role/LambdaExecuteRole"
+execute_role="arn:aws:iam::$account:role/LambdaExecuteRole"
 region='eu-west-1'
 
 zip_package() {
